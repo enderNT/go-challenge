@@ -53,8 +53,5 @@ func CreditAssigment (w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if r.URL.Path != "/credit-assigment" {
-		io.WriteString(w, "Hi, try other endpoint")
-	}
 	io.WriteString(w, "Hi, try the method/verb post :) with the next struct: \n\n{'Investment': 100}")
 }
